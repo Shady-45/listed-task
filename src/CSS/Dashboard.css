@@ -1,0 +1,234 @@
+.dashboard-container{
+    background-color: var(--light-gray);
+    height: 140vh;
+    width: 100%;
+}
+/* LEFT */
+.left-side-dashboard{
+    background-color: var(--bg-color);
+    width: fit-content;
+    height: 124vh;
+    padding: 3rem;
+    position: absolute;
+    top: 5%;
+    left: 3%;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 12rem;
+}
+.left-items{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+   
+    
+}
+.items-container{
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    gap: .5rem;
+   
+}
+.left-heading{
+    color: var(--text-color);
+    font-family: var(--mazzo-font);
+    font-size: var(--font-l);
+}
+.left-items-2{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    color: var(--text-color);
+    font-family: var(--mazzo-font);
+    font-size: 10px;
+    margin-top: 15rem;
+}
+.items{
+    display: flex;
+    align-items: center;
+    font-size: 10px;
+    color: var(--text-color);
+    font-family: var(--mazzo-font);
+}
+.items-img{
+    height: 40px;
+}
+
+/* LEFT */
+.db-container{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 37px;
+    font-family: var(--mazzo-font);
+    gap: 30rem;
+    margin-left: 8rem;
+}
+.db-inner{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+.profile{
+    height: 27px;
+    border-radius: 50%;
+}
+.notofication-icon{
+    font-size: 35px;
+}
+.inner-input{
+    width: 100%;
+    height: 31px;
+    border: 1px solid var(--white-color);
+    border-radius: 7px;
+    padding: 10px;
+    background-color: var(--white-color);
+    outline: none;
+}
+.db-heading{
+    font-size: 25px;
+}
+.inner-input::placeholder{
+    font-family: var(--mazzo-font);
+    color: var(--light-gray);
+}
+.search-icon{
+
+    position: absolute;
+    /* left: 0; */
+    left: 80.5%;
+    color: var(--light-gray);
+    font-size: 21px;
+    top: 2.5rem;
+}
+.cards{
+    display: flex;
+    font-family: var(--mazzo-font);
+  margin-left: 18rem;
+    gap: 5.2rem;
+align-items: center;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--light-green);
+    width: fit-content;
+    padding: 20px;
+    border-radius: 20px;
+    gap: 7px;
+}
+.card-img{
+    height: 30px;
+}
+.inner-card{
+    display: flex;
+    gap: 1rem;
+    font-size: var(--font-s,);
+    align-items: baseline;
+}
+.gold{
+    background-color: var(--light-gold);
+}
+.pink{
+    background-color: var(--light-pink);
+}
+.blue{
+    background-color: var(--light-blue);
+}
+.chart-schedules{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    background-color: white;
+    width: fit-content;
+    height: 20rem;
+    padding: 40px;
+    font-size: 14px;
+    border-radius: 20px;
+}
+
+.charts-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 25rem;
+    margin-left: 8rem;
+    
+   
+}
+.selection-container{
+    display: flex;
+    gap: 3px;
+}
+.inner-container{
+    display: flex;
+    gap: 5rem;
+    font-family: var(--mazzo-font);
+}
+.section-info{
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+.section-info::before{
+    content: " ";
+    display: block;
+    height: 80px;
+    width: 5px;
+    position: absolute;
+    left: 63.5%;
+    background-color: #9BDD7C;
+}
+.section-info-factory{
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+.section-info-factory::before{
+    content: " ";
+    display: block;
+    height: 80px;
+    width: 5px;
+    position: absolute;
+    left: 63.5%;
+    
+    background-color: #6972C3;
+}
+.inner-info-container{
+    font-family: var(--lato-font);
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.section-head{
+    font-size: var(--font-m);
+
+}
+.section-paragraph{
+    font-size: var(--font-s);
+}
+
+/* RESPONSIVE */
+@media only screen and (max-width: 768px){
+    .db-container{
+        display: flex;
+        justify-content: center;
+        align-items: baseline;
+        width: 50%;
+    }
+    .cards{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-left: 12rem;
+    }
+    .charts-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: 4rem;
+    }
+}
