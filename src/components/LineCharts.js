@@ -35,8 +35,7 @@ const LineCharts = () => {
         </div>
         <LineChart
           className="line-charts"
-          width={window.innerWidth <= 768px ? '600':'1000'}
-          
+          width={1000}
           height={200}
           data={data}
           margin={{
