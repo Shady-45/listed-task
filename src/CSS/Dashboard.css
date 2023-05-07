@@ -31,6 +31,14 @@
     gap: .5rem;
    
 }
+.left-info{
+    color: var(--light-gray);
+    transition-duration: 0.3s;
+    cursor: pointer;
+}
+.left-info:hover{
+    color: white;
+}
 .left-heading{
     color: var(--text-color);
     font-family: var(--mazzo-font);
@@ -216,7 +224,18 @@ align-items: center;
         display: flex;
         justify-content: center;
         align-items: baseline;
+        padding: 0;
+        position: relative;
+        top: 5rem;
+        left: 8rem;
+        gap: 0;
         width: 50%;
+    }
+    .left-side-dashboard{
+        height: 90vh;
+    }
+    .db-inner{
+        display: none;
     }
     .cards{
         display: flex;
@@ -224,6 +243,7 @@ align-items: center;
         justify-content: center;
         align-items: center;
         margin-left: 12rem;
+        margin-top: 10rem;
     }
     .charts-container{
         display: flex;
@@ -231,4 +251,11 @@ align-items: center;
         justify-content: center;
         margin-left: 4rem;
     }
+    .left-items-2{
+        margin-top: 0rem;
+    }
+    .line-chart{
+        margin-left: -5rem;
+    }
+    
 }

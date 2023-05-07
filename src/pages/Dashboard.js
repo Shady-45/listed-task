@@ -34,7 +34,7 @@ const Dashboard = () => {
   useEffect(() => {
     fetchData();
   }, []);
-  console.log(userData);
+
   /*   const payments = userData.map((item) => item.payments);
   console.log(); */
   return (
@@ -50,7 +50,7 @@ const Dashboard = () => {
                   src="/dashboard.png"
                   alt="dashboard"
                 />
-                <h3>Dashboard</h3>
+                <h3 className="left-info">Dashboard</h3>
               </div>
               <div className="items">
                 <img
@@ -59,7 +59,7 @@ const Dashboard = () => {
                   alt="dashboard"
                   referrerPolicy="no-referrer"
                 />
-                <h3>Transactions</h3>
+                <h3 className="left-info">Transactions</h3>
               </div>
               <div className="items">
                 <img
@@ -67,21 +67,21 @@ const Dashboard = () => {
                   src="/schedule.png"
                   alt="dashboard"
                 />
-                <h3>Schedules</h3>
+                <h3 className="left-info">Schedules</h3>
               </div>
               <div className="items">
                 <img className="items-img" src="/profile.png" alt="dashboard" />
-                <h3>Users</h3>
+                <h3 className="left-info">Users</h3>
               </div>
               <div className="items">
                 <img className="items-img" src="/setting.png" alt="dashboard" />
-                <h3>Settings</h3>
+                <h3 className="left-info">Settings</h3>
               </div>
             </div>
           </div>
           <div className="left-items-2 ">
-            <h3>Help</h3>
-            <h3>Contact Us</h3>
+            <h3 className="left-info">Help</h3>
+            <h3 className="left-info">Contact Us</h3>
           </div>
         </section>
         <section className="right-side-dashboard">

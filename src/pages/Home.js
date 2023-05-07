@@ -12,7 +12,7 @@ const Home = () => {
   const googleLogin = async () => {
     try {
       const result = await signInWithPopup(auth, googleAuth);
-      console.log(result.user);
+
       navigate("/dashboard");
     } catch (error) {
       console.log(error);
@@ -25,7 +25,7 @@ const Home = () => {
     event.preventDefault();
     const email = emailRef.current.value;
     const password = passwordRef.current.value;
-    console.log(`Email: ${email}, Password: ${password}`);
+
     if (email && password) {
       navigate("/dashboard");
     } else {
